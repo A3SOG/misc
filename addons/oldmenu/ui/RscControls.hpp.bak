@@ -1,0 +1,395 @@
+class ProfileMenu: RscPictureKeepAspect {
+	idc = -2;
+	x = "54.25 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX)";
+	y = "-17.80 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	w = "43.2 * (((safezoneW / safezoneH) min 1.2) / 40)";
+	h = "43.2 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	color[] = {0.78,0.87,0.63,1}; //button text color
+	text = QUOTE(PATHTOF(data\UI_SOG_MainMenu_ProfileBG01_ca.paa));
+};
+class ProfileMenuBranchPicture: ProfileMenu {
+	idc = 202300;
+	text = "";
+};
+class ProfileMenuRankPicture: ProfileMenu {
+	idc = 202301;
+	text = "";
+};
+class ProfileMenuCharacter: ProfileMenu {
+	idc = -1;
+	text = QUOTE(PATHTOF(data\character\UI_SOG_MainMenu_ProfileBranch01_Character_001_ca.paa));
+};
+class ProfileMenuBranchTitle: RscTitle {
+	idc = -1;
+	x = "54.38 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX)";
+	y = "-16.6 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	w = "15 * (((safezoneW / safezoneH) min 1.2) / 40)";
+	h = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	colorBackground[] = {0,0,0,0};
+	colorText[] = {0.78,0.87,0.63,1}; //button text color (also?)
+	shadow = 0;
+	style = 0;
+	text = "BRANCH:";
+};
+class ProfileMenuBranchText: RscTitle {
+	idc = 202302;
+	x = "57.752 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX)";
+	y = "-16.6 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	w = "15 * (((safezoneW / safezoneH) min 1.2) / 40)";
+	h = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	colorBackground[] = {0,0,0,0};
+	colorText[] = {0.78,0.87,0.63,1}; //button text color (also?)
+	shadow = 0;
+	style = 0;
+	text = "";
+};
+class ProfileMenuMOSTitle: RscTitle {
+	idc = -1;
+	x = "65.55 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX)";
+	y = "-16.6 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	w = "15 * (((safezoneW / safezoneH) min 1.2) / 40)";
+	h = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	colorBackground[] = {0,0,0,0};
+	colorText[] = {0.78,0.87,0.63,1}; //button text color (also?)
+	shadow = 0;
+	style = 0;
+	text = "MOS: ";
+};
+class ProfileMenuMOSText: RscTitle {
+	idc = 202303;
+	x = "67.52 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX)";
+	y = "-16.6 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	w = "15 * (((safezoneW / safezoneH) min 1.2) / 40)";
+	h = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	colorBackground[] = {0,0,0,0};
+	colorText[] = {0.78,0.87,0.63,1}; //button text color (also?)
+	shadow = 0;
+	style = 0;
+	text = "";
+};
+class PlayersNameTitle: RscTitle {
+	idc = -1;
+	x = "54.38 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX)";
+	y = "-17.75 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	w = "15 * (((safezoneW / safezoneH) min 1.2) / 40)";
+	h = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	colorBackground[] = {0,0,0,0};
+	colorText[] = {0.78,0.87,0.63,1}; //button text color (also?)
+	shadow = 0;
+	style = 0;
+	text = "NAME:";
+};
+class PlayersName: RscTitle {
+	idc = 109;
+	x = "56.9 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX)";
+	y = "-17.75 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	w = "15 * (((safezoneW / safezoneH) min 1.2) / 40)";
+	h = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	colorBackground[] = {0,0,0,0};
+	colorText[] = {0.78,0.87,0.63,1}; //button text color (also?)
+	shadow = 0;
+	style = 0;
+	text = "$STR_A3_RscDisplayMain_PlayersName";
+};
+class ProfileMenuRankText: RscTitle {
+	idc = 202304;
+	x = "60.48 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX)";
+	y = "-10.38 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	w = "15 * (((safezoneW / safezoneH) min 1.2) / 40)";
+	h = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	colorBackground[] = {0,0,0,0};
+	colorText[] = {0.78,0.87,0.63,1}; //button text color (also?)
+	shadow = 0;
+	style = 0;
+	text = "";
+};
+class ProfileMenuCurrencyText: RscTitle {
+	idc = 202305;
+	x = "55.10 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX)";
+	y = "-10.38 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	w = "15 * (((safezoneW / safezoneH) min 1.2) / 40)";
+	h = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	colorBackground[] = {0,0,0,0};
+	colorText[] = {0.78,0.87,0.63,1}; //button text color (also?)
+	shadow = 0;
+	style = 0;
+	text = "";
+};
+class MenuBG: RscPictureKeepAspect {
+	idc = -1;
+	x = "3.1 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX)";
+	y = "-2.4 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	w = "21.55 * (((safezoneW / safezoneH) min 1.2) / 40)";
+	h = "33 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	text = QUOTE(PATHTOF(data\UI_SOG_MainMenu_BG02_ca.paa));
+};
+class GameLogo: RscPictureKeepAspect {
+	idc = 1202;
+	x = "3.20 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX)";
+	y = "5.7 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	w = "16.63 * (((safezoneW / safezoneH) min 1.2) / 40)";
+	h = "33.31 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	text = QUOTE(PATHTOF(data\UI_SOG_MainMenu_Logo01_ca.paa));
+};
+class Title: RscTitle {
+	idc = 1003;
+	x = "3.20 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX)";
+	y = "14.2 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	w = "15 * (((safezoneW / safezoneH) min 1.2) / 40)";
+	h = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	colorBackground[] = {0,0,0,0};
+	colorText[] = {0.78,0.87,0.63,1}; //button text color (also?)
+	shadow = 0;
+	style = 0;
+	text = " MAIN MENU";
+	//text = "$STR_A3_RscDisplayMain_Title";
+};
+class ButtonPlay: RscButtonMenu {
+	// idc = 138;
+	// x = "3.20 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX)";
+	// y = "15.3 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	// w = "15 * (((safezoneW / safezoneH) min 1.2) / 40)";
+	// h = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	idc = 138;
+	x = "safeZoneX + 0.049";
+	y = "0.0375";
+	w = 0.495;
+	h = 0.04925;
+
+	//-------------------------button background behaviours-------------------------//
+	colorBackground[] = {0,0,0,0}; //button background
+	colorBackgroundFocused[] = {0.78,0.87,0.63,1}; //button background highlighted
+	colorBackground2[] = {0.55,0.62,0.44,1}; //color shift when highlighted
+
+	//-------------------------button text behaviours-------------------------//
+	colorText[] = {0.78,0.87,0.63,1}; //button text color (also?)
+	color[] = {0.78,0.87,0.63,1}; //button text color
+	colorFocused[] = {0.20,0.22,0.18,1};
+	color2[] = {0.20,0.22,0.18,1};//button text color
+
+	/* this section covers button anims
+	animTextureNormal = "#(argb,8,8,3)color(1,1,1,1)";
+	animTextureDisabled = "#(argb,8,8,3)color(1,1,1,1)";
+	animTextureOver = "#(argb,8,8,3)color(1,1,1,1)";
+	animTextureFocused = "#(argb,8,8,3)color(1,1,1,1)";
+	animTexturePressed = "#(argb,8,8,3)color(1,1,1,1)";
+	animTextureDefault = "#(argb,8,8,3)color(1,1,1,1)";
+	//----------------------------------------------------------------//
+	colorDisabled[] = {1,1,1,0.25}; //button text color (when disabled)
+	//----------------------------------------------------------------//
+	textSecondary = "";
+	colorSecondary[] = {1,1,1,1};
+	colorFocusedSecondary[] = {0,0,0,1};
+	color2Secondary[] = {0,0,0,1};
+	colorDisabledSecondary[] = {1,1,1,0.25};*/
+
+	//ctrlStyle = "0x02";
+
+	onButtonClick = "playMission ['','\z\sog_misc\addons\missions\scenarios\SP_SOG_Training.VR'];";
+	text = "    training";
+	// text = "$STR_A3_RscDisplayMain_ButtonPlay";
+	tooltip = "Begin Your Story.";
+};
+class ButtonMultiplayer: ButtonPlay {
+	// idc = 105;
+	// y = "16.4 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	// onButtonClick = "";
+	// text = "    multiplayer";
+	// // text = "$STR_A3_RscDisplayMain_ButtonMultiplayer";
+	// tooltip = "Engage in Online Warfare.";
+	idc = 105;
+	x = "safeZoneX + 0.049";
+	y = "0.1";
+	w = 0.495;
+	h = 0.04925;
+	onButtonClick = "";
+	text = "    multiplayer";
+	// text = "$STR_A3_RscDisplayMain_ButtonMultiplayer";
+	tooltip = "Engage in Online Warfare.";
+};
+class ButtonVirtualArsenal: ButtonPlay {
+	// idc = 2421;
+	// y = "17.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	// onButtonClick = "playMission['','\A3\Missions_F_Bootcamp\Scenarios\Arsenal.VR']";
+	// //onButtonClick = "if (isClass (configFile >> 'CfgPatches' >> 'ace_arsenal')) then {playMission ['','\z\ace\addons\arsenal\missions\Arsenal.VR']} else {playMission['','\A3\Missions_F_Bootcamp\Scenarios\Arsenal.VR']}";
+	// text = "    loadout";
+	// // text = "$STR_A3_RscDisplayMain_ButtonVirtualArsenal";
+	// tooltip = "Open Character Loadout.";
+	idc = 2421;
+	x = "safeZoneX + 0.049";
+	y = "0.16225";
+	w = 0.495;
+	h = 0.04925;
+	onButtonClick = "playMission['','\A3\Missions_F_Bootcamp\Scenarios\Arsenal.VR']";
+	//onButtonClick = "if (isClass (configFile >> 'CfgPatches' >> 'ace_arsenal')) then {playMission ['','\z\ace\addons\arsenal\missions\Arsenal.VR']} else {playMission['','\A3\Missions_F_Bootcamp\Scenarios\Arsenal.VR']}";
+	text = "    loadout";
+	// text = "$STR_A3_RscDisplayMain_ButtonVirtualArsenal";
+	tooltip = "Open Character Loadout.";
+};
+class ButtonEditor: ButtonPlay {
+	// idc = 142;
+	// y = "18.6 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	// onButtonClick = "";
+	// text = "    editor";
+	// // text = "$STR_A3_RscDisplayMain_ButtonEditor";
+	// tooltip = "Create and Edit Missions.";
+	idc = 142;
+	x = "safeZoneX + 0.049";
+	y = "0.224725";
+	w = 0.495;
+	h = 0.04925;
+	onButtonClick = "";
+	text = "    editor";
+	// text = "$STR_A3_RscDisplayMain_ButtonEditor";
+	tooltip = "Create and Edit Missions.";
+};
+class ButtonOptions: ButtonPlay {
+	// idc = 1896;
+	// y = "19.7 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	// onButtonClick = "";
+	// text = "    settings";
+	// // text = "$STR_A3_RscDisplayMain_ButtonOptions";
+	// tooltip = "Configure Your Settings.";
+	idc = 1896;
+	x = "safeZoneX + 0.049";
+	y = "0.287";
+	w = 0.495;
+	h = 0.04925;
+	onButtonClick = "";
+	text = "    settings";
+	// text = "$STR_A3_RscDisplayMain_ButtonOptions";
+	tooltip = "Configure Your Settings.";
+};
+class ButtonVideo: RscButtonMenu {
+	idc = 301;
+	x = "18.35 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX)";
+	y = "15.3 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	w = "14 * (((safezoneW / safezoneH) min 1.2) / 40)";
+	h = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+
+	//-------------------------button background behaviours-------------------------//
+	colorBackground[] = {0.20,0.22,0.18,0.6}; //button background
+	colorBackgroundFocused[] = {0.78,0.87,0.63,1}; //button background highlighted
+	colorBackground2[] = {0.55,0.62,0.44,1}; //color shift when highlighted
+
+	//-------------------------button text behaviours-------------------------//
+	colorText[] = {0.78,0.87,0.63,1}; //button text color (also?)
+	color[] = {0.78,0.87,0.63,1}; //button text color
+	colorFocused[] = {0.20,0.22,0.18,1};
+	color2[] = {0.20,0.22,0.18,1};//button text color
+
+	/* this section covers button anims
+	animTextureNormal = "#(argb,8,8,3)color(1,1,1,1)";
+	animTextureDisabled = "#(argb,8,8,3)color(1,1,1,1)";
+	animTextureOver = "#(argb,8,8,3)color(1,1,1,1)";
+	animTextureFocused = "#(argb,8,8,3)color(1,1,1,1)";
+	animTexturePressed = "#(argb,8,8,3)color(1,1,1,1)";
+	animTextureDefault = "#(argb,8,8,3)color(1,1,1,1)";
+	//----------------------------------------------------------------//
+	colorDisabled[] = {1,1,1,0.25}; //button text color (when disabled)
+	//----------------------------------------------------------------//
+	textSecondary = "";
+	colorSecondary[] = {1,1,1,1};
+	colorFocusedSecondary[] = {0,0,0,1};
+	color2Secondary[] = {0,0,0,1};
+	colorDisabledSecondary[] = {1,1,1,0.25};*/
+
+	//ctrlStyle = "0x02";
+
+	text = "video";
+	tooltip = "Change Video Settings.";
+};
+class ButtonAudio: ButtonVideo {
+	idc = 302;
+	y = "16.4 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";	
+	text = "audio";
+	tooltip = "Change Audio Settings.";
+};
+class ButtonControls: ButtonVideo {
+	idc = 303;
+	y = "17.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";	
+	ctrlStyle = "0x02";
+	text = "controls";
+	tooltip = "Change Input Settings.";
+};
+class ButtonGame: ButtonVideo {
+	idc = 307;
+	y = "18.6 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	text = "game";
+	tooltip = "Change Gameplay Settings.";
+};
+class ButtonProfile: ButtonVideo {
+	idc = 1001;
+	y = "19.7 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	onButtonClick = "_display = ctrlParent (_this select 0);	_ctrl109 =_display displayCtrl 109; ctrlActivate _ctrl109; debuglog _ctrl109";
+	text = "profile";
+	tooltip = "Change Profile Settings.";
+};
+class ButtonExpansions: ButtonVideo {
+	idc = 140;
+	y = "20.8 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	text = "expansions";
+	tooltip = "Change Expansion Settings.";
+};
+class ButtonDatabase: ButtonPlay {
+	idc = 2423;
+	x = "safeZoneX + 0.049";
+	y = "0.34925";
+	w = 0.495;
+	h = 0.04925;
+	onButtonClick = "";
+	shortcuts[] = {"0x00050000 + 3"};
+	text = "    quit";
+	// text = "$STR_A3_RscDisplayMain_ButtonExit";
+	tooltip = "$STR_A3_RscDisplayMain_ButtonLearn_tooltip";
+};
+class ButtonExit: ButtonPlay {
+	idc = 106;
+	y = "20.8 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	onButtonClick = "";
+	shortcuts[] = {"0x00050000 + 3"};
+	text = "    quit";
+	// text = "$STR_A3_RscDisplayMain_ButtonExit";
+	tooltip = "Exit Simulation.";
+};
+class CopyrightText: RscText {
+	idc = 1006;
+	x = "0 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX)";
+	y = "0 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	w = "0 * (((safezoneW / safezoneH) min 1.2) / 40)";
+	h = "0 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	colorBackground[] = {0,0,0,0.7};
+	font = "PuristaLight";
+	shadow = 0;
+	sizeEx = "0 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	text = "$STR_A3_RscDisplayMain_PlayersName";
+};
+class VersionNumber: RscText {
+	idc = 118;
+	x = "safezoneX + safezoneW - 4.9 * (((safezoneW / safezoneH) min 1.2) / 40)";
+	y = "0 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	w = "0 * (((safezoneW / safezoneH) min 1.2) / 40)";
+	h = "0 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	font = "PuristaLight";
+	shadow = 0;
+	sizeEx = "0.8 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	style = 1;
+};
+class VersionText: RscText {
+	idc = 1008;
+	x = "safezoneX + safezoneW - 12.5 * (((safezoneW / safezoneH) min 1.2) / 40)";
+	y = "0 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+	w = "0 * (((safezoneW / safezoneH) min 1.2) / 40)";
+	h = "0 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	font = "PuristaLight";
+	shadow = 0;
+	sizeEx = "0.8 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	style = 1;
+};
+class ListSort: RscListBox {
+	idc = 1555;
+	x = "0";
+	y = "0";
+	w = "0";
+	h = "0";
+};

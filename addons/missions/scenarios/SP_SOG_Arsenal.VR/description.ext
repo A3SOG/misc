@@ -1,0 +1,9 @@
+dev = "Karel";
+author = "$STR_A3_Bohemia_Interactive";
+
+onLoadName = "$STR_A3_Arsenal";
+overviewText = "$STR_A3_Arsenal_overviewText";
+overviewPicture = "\A3\Ui_f\data\Logos\arsenal_1024_ca.paa";
+
+briefing = 0;
+debriefing = 0;
