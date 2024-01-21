@@ -7,7 +7,7 @@
 		<img src="https://img.shields.io/github/issues/A3SOG/misc" alt="open-issues">
 	</a>
 	<a href="https://github.com/A3SOG/misc/actions/workflows/build.yml">
-		<img src="https://img.shields.io/github/workflow/status/A3SOG/misc/Build" alt="build-status">
+		<img src="https://img.shields.io/github/actions/workflow/status/A3SOG/misc/build.yml?branch=master" alt="build-status">
 	</a>
 </p>
 
