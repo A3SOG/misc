@@ -1,5 +1,5 @@
 _mode = _this select 0;
-_parameters = _this select 1;
+_params = _this select 1;
 _class = _this select 2;
 
 switch _mode do {
@@ -9,7 +9,7 @@ switch _mode do {
 
 		//--- Color Init
 		_display = _params select 0;
-		_ehKeyDown = _display displayAddEventHandler ["keydown","with uinamespace do {['keyDown',_this,''] call RscDisplayMain_script;};"];
+		_ehKeyDown = _display displayAddEventHandler ["KeyDown","with uinamespace do {['keyDown',_this,''] call RscDisplayMain_script;};"];
 
 		//--- Hide player's name if Stream Friendly UI is on. It is shown via RscDisplayGameOptions.sqf
 		[_display, 109] call (uiNamespace getVariable 'BIS_fnc_setIDCStreamFriendly');
@@ -26,21 +26,21 @@ switch _mode do {
 
 		//--- Options button
 		_button = _display displayCtrl 1896;
-		_button ctrlAddEventHandler ["buttonclick","with uinamespace do {['optionsButton',_this,''] spawn RscDisplayMain_script};"];
+		_button ctrlAddEventHandler ["ButtonClick","with uinamespace do {['optionsButton',_this,''] spawn RscDisplayMain_script};"];
 
 		//--- SRecord button
 		_sbutton = _display displayCtrl 1610;
-		_sbutton ctrlAddEventHandler ["buttonclick","with uinamespace do {['sRecordButton',_this,''] spawn RscDisplayMain_script};"];
+		_sbutton ctrlAddEventHandler ["ButtonClick","with uinamespace do {['sRecordButton',_this,''] spawn RscDisplayMain_script};"];
 		_cbutton = _display displayCtrl 1611;
-		_cbutton ctrlAddEventHandler ["buttonclick","with uinamespace do {['cRecordButton',_this,''] spawn RscDisplayMain_script};"];
+		_cbutton ctrlAddEventHandler ["ButtonClick","with uinamespace do {['cRecordButton',_this,''] spawn RscDisplayMain_script};"];
 
 		//--- Meta buttons
 		_pdbutton = _display displayCtrl 1620;
-		_pdbutton ctrlAddEventHandler ["buttonclick","with uinamespace do {['pDossierButton',_this,''] spawn RscDisplayMain_script};"];
+		_pdbutton ctrlAddEventHandler ["ButtonClick","with uinamespace do {['pDossierButton',_this,''] spawn RscDisplayMain_script};"];
 		_psbutton = _display displayCtrl 1621;
-		_psbutton ctrlAddEventHandler ["buttonclick","with uinamespace do {['pStatsButton',_this,''] spawn RscDisplayMain_script};"];
+		_psbutton ctrlAddEventHandler ["ButtonClick","with uinamespace do {['pStatsButton',_this,''] spawn RscDisplayMain_script};"];
 		_pnbutton = _display displayCtrl 1622;
-		_pnbutton ctrlAddEventHandler ["buttonclick","with uinamespace do {['pNewsButton',_this,''] spawn RscDisplayMain_script};"];
+		_pnbutton ctrlAddEventHandler ["ButtonClick","with uinamespace do {['pNewsButton',_this,''] spawn RscDisplayMain_script};"];
 			
 		(_display displayCtrl 301) ctrlSetFade 1;		//Video
 		(_display displayCtrl 302) ctrlSetFade 1;		//Audio
